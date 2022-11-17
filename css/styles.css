@@ -693,6 +693,56 @@ body {
     text-align: center;
 }
 
+.form-field {
+    position: relative;
+}
+
+.form-label {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 1%;
+    color: var(--another-text-color);
+}
+
+.form-input {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.person-modal-icon {
+    width: 12px;
+    height: 12px;
+    
+}
+
+.modal-icon {
+    position: absolute;
+    left: 14px;
+    bottom: 35%;
+}
+
+.phone-modal-icon {
+    width: 13px;
+    height: 13px;
+}
+
+.email-modal-icon {
+    width: 15px; 
+    height: 12px;
+}
+
+.order-modal-btn {
+    padding: 10px 52px;
+}
+
 
 /*PORTFOLIO*/
 

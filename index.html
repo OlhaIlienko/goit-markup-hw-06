@@ -399,21 +399,30 @@
             <div class="order-form">
                 <p class="order-form-title">Залиште свої дані, ми вам передзвонимо</p>
                 <form action="">
-                    <div>
-                        <label class="form-label" for="user_name">Ім'я</label>
-                        <input class="form-input" type="text" id="user_name">
+                    <div class="form-field">    
+                        <label class="form-label" for="user_name">Ім'я</label>                  
+                        <input class="form-input" type="text" id="user_name">                        
+                        <svg class="person-modal-icon modal-icon">
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
                     </div>
-                    <div>
-                        <label class="form-label" for="user_tel">Телефон</label>
-                        <input class="form-input" type="tel" id="user_tel">
+                    <div class="form-field">   
+                        <label class="form-label" for="user_tel">Телефон</label>                    
+                        <input class="form-input" type="tel" id="user_tel">                       
+                        <svg class="phone-modal-icon modal-icon">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
                     </div>
-                    <div>
-                        <label class="form-label" for="user_email">Пошта</label>
+                    <div class="form-field">  
+                        <label class="form-label" for="user_email">Пошта</label>                      
                         <input class="form-input" type="email" id="user_email">
+                        <svg class="email-modal-icon modal-icon">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
                     </div>
-                    <div>
-                        <label class="form-label" for="user_comment">Коментар</label>
+                    <div class="form-field">
                         <textarea name="user_comment" id="user_comment" rows="8"></textarea>
+                        <label class="form-label" for="user_comment">Коментар</label>
                     </div>
                     <button class="order-modal-btn general-btn btn" type="submit">Відправити</button>    
                 </form>
