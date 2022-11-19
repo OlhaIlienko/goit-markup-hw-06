@@ -379,11 +379,16 @@
             </div>
             <div class="footer-form">
                 <form action="">
-                    <b class="footer-form-title">Підпишіться на розсилку</b>
-                    <div>
+                    <p class="footer-form-title">Підпишіться на розсилку</p>
+                    <div class="footer-form-send">
                         <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                        <button class="footer-form-btn general-btn btn" type="submit">Підписатися</button>
+                        <input class="footer-form-input" type="email" name="email" id="email" placeholder="E-mail">
+                        <button class="footer-form-btn general-btn btn" type="submit">
+                            Підписатися
+                            <svg class="footer-icon-send">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -400,33 +405,33 @@
                 <p class="order-form-title">Залиште свої дані, ми вам передзвонимо</p>
                 <form action="">
                     <div class="form-field">    
-                        <label class="form-label" for="user_name">Ім'я</label>                  
-                        <input class="form-input" type="text" id="user_name">                        
+                        <label class="form-label" for="user-name">Ім'я</label>                  
+                        <input class="form-input" type="text" id="user-name" name="user-name">                        
                         <svg class="person-modal-icon modal-icon">
                             <use href="./images/icons.svg#icon-person-black"></use>
                         </svg>
                     </div>
                     <div class="form-field">   
-                        <label class="form-label" for="user_tel">Телефон</label>                    
-                        <input class="form-input" type="tel" id="user_tel">                       
+                        <label class="form-label" for="user-tel">Телефон</label>                    
+                        <input class="form-input" type="tel" id="user-tel" name="user-tel">                       
                         <svg class="phone-modal-icon modal-icon">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
                     </div>
                     <div class="form-field">  
-                        <label class="form-label" for="user_email">Пошта</label>                      
-                        <input class="form-input" type="email" id="user_email">
+                        <label class="form-label" for="user-email">Пошта</label>                      
+                        <input class="form-input" type="email" id="user-email" name="user-email">
                         <svg class="email-modal-icon modal-icon">
                             <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
                     </div>
-                    <div class="form-field">
+                    <div class="form-field comment-container">
                         <label class="form-label" for="user_comment">Коментар</label>
                         <textarea class="comment-input" name="user_comment" id="user_comment" rows="8" placeholder="Введіть текст"></textarea>
                     </div>
-                    <div class="form-field ">
-                        <input type="checkbox">
-                        <label for="">Погоджуюся з розсилкою та приймаю  Умови договору</label>
+                    <div class="form-field acception-container">
+                        <input type="checkbox" class="visually-hidden">
+                        <label class="acception-text" for="">Погоджуюся з розсилкою та приймаю <a class="acception-link" href="">Умови договору</a></label>
                     </div>
                     <div class="form-field">
                         <button class="order-modal-btn general-btn btn" type="submit">Відправити</button>

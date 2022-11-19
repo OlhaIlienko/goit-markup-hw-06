@@ -521,6 +521,7 @@ body {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
 }
 
@@ -598,20 +599,32 @@ body {
     fill: var(--main-white-color);
 }
 
-.footer-form {
-    padding: 0;
-    margin-top: 72px;
-    margin-bottom: 94px;
-    margin-left: 93px;
+.footer-form-send {
+    display: flex;
 }
 
-.footer-form input {
+.footer-form-input {
+    padding-left: 16px;
     margin-right: 12px;
     width: 358px;
     height: 50px;
-    background-color: var(--main-bgr-color);
+    background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: left;
+    letter-spacing: 3%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-input::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: left;
+    letter-spacing: 3%;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-title {
@@ -626,8 +639,16 @@ body {
 
 
 .footer-form-btn {
-    padding-right: ;
-    padding-left: ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 28px;
+}
+
+.footer-icon-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
 
 
@@ -684,6 +705,16 @@ body {
     background-color: var(--main-white-color);
 }
 
+.close-btn-icon {
+    transition-property: fill;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function); 
+}
+
+.close-btn:focus .close-btn-icon {
+    fill: var(--accent-color);
+}
+
 .order-form-title {
     margin-bottom: 12px;
     font-weight: 700;
@@ -713,6 +744,7 @@ body {
     width: 100%;
     height: 40px;
     font: inherit;
+    outline: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
@@ -756,11 +788,15 @@ body {
     height: 12px;
 }
 
+.comment-container {
+    margin-bottom: 20px;
+}
+
 .comment-input {
     margin: 0;
-    margin-bottom: 20px;
     padding: 12px 16px;
     width: 100%;
+    height: 120px;
     font: inherit;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -771,6 +807,23 @@ body {
     line-height: calc(14 / 12);
     letter-spacing: 1%;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.acception-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.acception-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 3%;
+    color: var(--another-text-color);
+}
+
+.acception-link {
+    color: var(--accent-color);
 }
 
 .order-modal-btn {
