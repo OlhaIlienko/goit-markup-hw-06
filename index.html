@@ -430,8 +430,14 @@
                         <textarea class="comment-input" name="user_comment" id="user_comment" rows="8" placeholder="Введіть текст"></textarea>
                     </div>
                     <div class="form-field acception-container">
-                        <input type="checkbox" class="visually-hidden">
-                        <label class="acception-text" for="">Погоджуюся з розсилкою та приймаю <a class="acception-link" href="">Умови договору</a></label>
+                        <label class="acception-label" for="checkbox">
+                            <input class="visually-hidden checkbox-input" type="checkbox" id="checkbox">
+                            <svg class="checkbox-icon">
+                                <use class="unchecked" href="./images/icons.svg#icon-vector"></use>
+                                <use class="checked" href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                            <span class="acception-text">Погоджуюся з розсилкою та приймаю <a class="acception-link" href="">Умови договору</a></span>
+                        </label>
                     </div>
                     <div class="form-field">
                         <button class="order-modal-btn general-btn btn" type="submit">Відправити</button>
