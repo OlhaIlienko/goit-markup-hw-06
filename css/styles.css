@@ -774,26 +774,16 @@ body {
 .modal-icon {
     position: absolute;
     left: 14px;
-    bottom: 25%;
+    bottom: 11px;
 
     transition-property: fill;
     transition-duration: var(--transition-dur);
     transition-timing-function: var(--transition-function);
 }
 
-.person-modal-icon {
-    width: 12px;
-    height: 12px;   
-}
-
-.phone-modal-icon {
-    width: 13px;
-    height: 13px;
-}
-
-.email-modal-icon {
-    width: 15px; 
-    height: 12px;
+.modal-icon {
+    width: 18px;
+    height: 18px;   
 }
 
 .comment-container {
@@ -808,6 +798,17 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    font: inherit;
+    font-size: 12px;
+}
+
+.comment-input::placeholder {
+    font: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 1%;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .acception-container {
