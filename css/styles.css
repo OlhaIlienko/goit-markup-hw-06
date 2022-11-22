@@ -521,7 +521,6 @@ body {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
 }
 
@@ -537,6 +536,10 @@ body {
 
 .footer-contacts-item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-contacts-list {
+    width: 231px;
 }
 
 .footer-contacts-link {
@@ -572,7 +575,6 @@ body {
     letter-spacing: 3%;
     text-transform: uppercase;
     color: var(--main-white-color);
-
 }
 
 .footer-social-links {
@@ -597,6 +599,10 @@ body {
 
 .footer-socials-link svg {
     fill: var(--main-white-color);
+}
+
+.footer-form {
+    margin-left: 93px;
 }
 
 .footer-form-send {
@@ -711,7 +717,8 @@ body {
     transition-timing-function: var(--transition-function); 
 }
 
-.close-btn:focus .close-btn-icon {
+.close-btn:focus .close-btn-icon,
+.close-btn:hover .close-btn-icon {
     fill: var(--accent-color);
 }
 
@@ -730,6 +737,7 @@ body {
 }
 
 .form-label {
+    display: block;
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
